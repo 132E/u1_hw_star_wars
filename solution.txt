@@ -1,0 +1,716 @@
+➜  u1_hw_star_wars git:(main) pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   solution.txt
+➜  u1_hw_star_wars git:(main) act1.sh
+zsh: command not found: act1.sh
+➜  u1_hw_star_wars git:(main) cd act1.sh
+cd: not a directory: act1.sh
+➜  u1_hw_star_wars git:(main) mkdir star_wars
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   solution.txt star_wars
+➜  u1_hw_star_wars git:(main) mkdir star_wars/empire rebellion
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   rebellion    solution.txt star_wars
+➜  u1_hw_star_wars git:(main) rm rebellion
+rm: rebellion: is a directory
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   rebellion    solution.txt star_wars
+➜  u1_hw_star_wars git:(main) rm rebellion
+rm: rebellion: is a directory
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   rebellion    solution.txt star_wars
+➜  u1_hw_star_wars git:(main) cd..
+zsh: command not found: cd..
+➜  u1_hw_star_wars git:(main) cd ..
+➜  tuesday git:(master) ✗ ls
+u1_hw_star_wars
+➜  tuesday git:(master) ✗ cd u1_hw_star_wars 
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   rebellion    solution.txt star_wars
+➜  u1_hw_star_wars git:(main) rm rebellion
+rm: rebellion: is a directory
+➜  u1_hw_star_wars git:(main) rm -rf rebellion
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   solution.txt star_wars
+➜  u1_hw_star_wars git:(main) cd star_wars
+➜  star_wars git:(main) ls
+empire
+➜  star_wars git:(main) rm empire
+rm: empire: is a directory
+➜  star_wars git:(main) ls
+empire
+➜  star_wars git:(main) rm -rf empire
+➜  star_wars git:(main) ls
+➜  star_wars git:(main) cd ..
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   solution.txt star_wars
+➜  u1_hw_star_wars git:(main) mkdir star_wars/empire star_wars/rebellion star_wars
+mkdir: star_wars: File exists
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   solution.txt star_wars
+➜  u1_hw_star_wars git:(main) cd star_wars
+➜  star_wars git:(main) ls
+empire    rebellion
+➜  star_wars git:(main) cd empire
+➜  empire git:(main) pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) touch darth_vader.txt
+➜  empire git:(main) ✗ echo ...heavy breathig...>>notes                              
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ touch emperor_palpatine.txt
+➜  empire git:(main) ✗ ls
+darth_vader.txt       emperor_palpatine.txt notes
+➜  empire git:(main) ✗ mkdir death_star
+➜  empire git:(main) ✗ mv darth_vader.txt death_star
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ ls
+darth_vader.txt
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ ls
+death_star            emperor_palpatine.txt notes
+➜  empire git:(main) ✗ ls -a
+.                     ..                    death_star            emperor_palpatine.txt notes
+➜  empire git:(main) ✗ git add .
+➜  empire git:(main) ✗ git commit -m "Act1 Changes"
+[main 507605c] Act1 Changes
+ 3 files changed, 1 insertion(+)
+ create mode 100644 star_wars/empire/death_star/darth_vader.txt
+ create mode 100644 star_wars/empire/emperor_palpatine.txt
+ create mode 100644 star_wars/empire/notes
+➜  empire git:(main) ls
+death_star            emperor_palpatine.txt notes
+➜  empire git:(main) cd ..
+➜  star_wars git:(main) ls
+empire    rebellion
+➜  star_wars git:(main) cd rebellion
+➜  rebellion git:(main) ls
+➜  rebellion git:(main) pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) touch princess_leia.txt && echo "Help me, Obi-Wan..."
+Help me, Obi-Wan...
+➜  rebellion git:(main) ✗ ls 
+princess_leia.txt
+➜  rebellion git:(main) ✗ rm princess_leia.txt
+➜  rebellion git:(main) touch princess_leia.txt && echo "Help me, Obi-Wan...">>
+zsh: parse error near `\n'
+➜  rebellion git:(main) touch princess_leia.txt && echo "Help me, Obi-Wan..."
+Help me, Obi-Wan...
+➜  rebellion git:(main) ✗ touch obi-wan
+➜  rebellion git:(main) ✗ rm touch obi-wan
+rm: touch: No such file or directory
+➜  rebellion git:(main) ✗ touch obi-wan.txt 
+➜  rebellion git:(main) ✗ touch luke_skywalker.txt
+➜  rebellion git:(main) ✗ mkdir millenium_falcon
+➜  rebellion git:(main) ✗ cd  millenium_falcon
+➜  millenium_falcon git:(main) ✗ touch han_solo.txt chewbacca.txt
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  rebellion git:(main) ✗ ls
+luke_skywalker.txt millenium_falcon   obi-wan.txt        princess_leia.txt
+➜  rebellion git:(main) ✗ mv luke_skywalker.txt obi-wan.txt princess_leia.txt millenium_falcon
+➜  rebellion git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) ✗ ls
+millenium_falcon
+➜  rebellion git:(main) ✗ cd millenium_falcon 
+➜  millenium_falcon git:(main) ✗ ls
+chewbacca.txt      han_solo.txt       luke_skywalker.txt obi-wan.txt        princess_leia.txt
+➜  millenium_falcon git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion/millenium_falcon
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  rebellion git:(main) ✗ ls
+millenium_falcon
+➜  rebellion git:(main) ✗ mv millenium_falcon death_star
+➜  rebellion git:(main) ✗ ls
+death_star
+➜  rebellion git:(main) ✗ u
+zsh: command not found: u
+➜  rebellion git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) ✗ ls
+death_star
+➜  rebellion git:(main) ✗ cd death_star 
+➜  death_star git:(main) ✗ ls
+chewbacca.txt      han_solo.txt       luke_skywalker.txt obi-wan.txt        princess_leia.txt
+➜  death_star git:(main) ✗ cd ..
+➜  rebellion git:(main) ✗ ls
+death_star
+➜  rebellion git:(main) ✗ ls    
+death_star
+➜  rebellion git:(main) ✗ mvdeath_star millenium_falcon
+zsh: command not found: mvdeath_star
+➜  rebellion git:(main) ✗ mv death_star millenium_falcon
+➜  rebellion git:(main) ✗ mv millenium_falcon/death_star
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  rebellion git:(main) ✗ ls
+millenium_falcon
+➜  rebellion git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) ✗ ls
+millenium_falcon
+➜  rebellion git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ mv rebellion/millenium_falcon empire/death_star
+➜  star_wars git:(main) ✗ git add <act2.sh>
+zsh: parse error near `\n'
+➜  star_wars git:(main) ✗ git add .
+➜  star_wars git:(main) ✗ git commit -m "Act2 Changes"
+[main 56beb5b] Act2 Changes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 star_wars/empire/death_star/millenium_falcon/chewbacca.txt
+ create mode 100644 star_wars/empire/death_star/millenium_falcon/han_solo.txt
+ create mode 100644 star_wars/empire/death_star/millenium_falcon/luke_skywalker.txt
+ create mode 100644 star_wars/empire/death_star/millenium_falcon/obi-wan.txt
+ create mode 100644 star_wars/empire/death_star/millenium_falcon/princess_leia.txt
+➜  star_wars git:(main) pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) mv millenium_falcon/*  empire/death_star
+zsh: no matches found: millenium_falcon/*
+➜  star_wars git:(main) mv empire/death_star/millenium_falcon/* empire/death_star
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ ls
+empire    rebellion
+➜  star_wars git:(main) ✗ cd empire
+➜  empire git:(main) ✗ ls
+death_star            emperor_palpatine.txt notes
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ ls
+chewbacca.txt      darth_vader.txt    han_solo.txt       luke_skywalker.txt millenium_falcon   obi-wan.txt        princess_leia.txt
+➜  death_star git:(main) ✗ mv obi-wan.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ rm obi-wan.txt
+➜  death_star git:(main) ✗ ls
+chewbacca.txt      darth_vader.txt    han_solo.txt       luke_skywalker.txt millenium_falcon   princess_leia.txt
+➜  death_star git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire/death_star
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ cd ..
+➜  u1_hw_star_wars git:(main) ✗ git add . 
+➜  u1_hw_star_wars git:(main) ✗ git commit -m "Act2 Changes"
+[main 4464aaa] Act2 Changes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ rename star_wars/empire/death_star/{millenium_falcon => }/chewbacca.txt (100%)
+ rename star_wars/empire/death_star/{millenium_falcon => }/han_solo.txt (100%)
+ rename star_wars/empire/death_star/{millenium_falcon => }/luke_skywalker.txt (100%)
+ delete mode 100644 star_wars/empire/death_star/millenium_falcon/obi-wan.txt
+ rename star_wars/empire/death_star/{millenium_falcon => }/princess_leia.txt (100%)
+➜  u1_hw_star_wars git:(main) pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars
+➜  u1_hw_star_wars git:(main) ls
+README.md    act1.sh      act2.sh      act3.sh      index.html   solution.txt star_wars
+➜  u1_hw_star_wars git:(main) cd star_wars
+➜  star_wars git:(main) ls
+empire    rebellion
+➜  star_wars git:(main) mv millenium_falcon/empire/death_star/* millenium_falcon
+zsh: no matches found: millenium_falcon/empire/death_star/*
+➜  star_wars git:(main) ls
+empire    rebellion
+➜  star_wars git:(main) cd empire
+➜  empire git:(main) mv millenium_falcon/empire/death_star/* millenium_falcon
+zsh: no matches found: millenium_falcon/empire/death_star/*
+➜  empire git:(main) pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) cd death_star 
+➜  death_star git:(main) ls
+chewbacca.txt      darth_vader.txt    han_solo.txt       luke_skywalker.txt millenium_falcon   princess_leia.txt
+➜  death_star git:(main) mv chewbacca.txt han_solo.txt luke_skywalker.txt prince_leia.txt/millenium_falcon
+mv: prince_leia.txt/millenium_falcon is not a directory
+➜  death_star git:(main) ls
+chewbacca.txt      darth_vader.txt    han_solo.txt       luke_skywalker.txt millenium_falcon   princess_leia.txt
+➜  death_star git:(main) mv chewbacca.txt han_solo.txt luke_skywalker.txt prince_leia.txt millenium_falcon
+mv: rename prince_leia.txt to millenium_falcon/prince_leia.txt: No such file or directory
+➜  death_star git:(main) ✗ ls
+darth_vader.txt   millenium_falcon  princess_leia.txt
+➜  death_star git:(main) ✗ mv princess_leia.txt millenium_falcon
+➜  death_star git:(main) ✗ mv darth_vader.txt/death_star
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ mv empire/death_star/millenium_falcon/* rebellion            
+➜  star_wars git:(main) ✗ mv empire/death_star/millenium_falcon/ rebellion 
+➜  star_wars git:(main) ✗ cd rebellion
+➜  rebellion git:(main) ✗ ls
+chewbacca.txt      han_solo.txt       luke_skywalker.txt millenium_falcon   princess_leia.txt
+➜  rebellion git:(main) ✗ mv chewbacca.txt luke_skywalker.txt princess_leia.txt han_solo.txt millenium_falcon 
+➜  rebellion git:(main) ✗ mv chewbacca.txt luke_skywalker.txt princess_leia.txt han_solo.txt/millenium_falcon
+mv: han_solo.txt/millenium_falcon is not a directory
+➜  rebellion git:(main) ✗ mv millenium_falcon rebellion
+➜  rebellion git:(main) ✗ mv rebellion millenium_falcon
+➜  rebellion git:(main) ✗ mv millenium_falcon/rebllion
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  rebellion git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ mv millenium_falcon/rebllion 
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  star_wars git:(main) ✗ mv millenium_falcon rebllion 
+mv: rename millenium_falcon to rebllion: No such file or directory
+➜  star_wars git:(main) ✗ rm millenium_falcon
+rm: millenium_falcon: No such file or directory
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ cd star_wars
+cd: no such file or directory: star_wars
+➜  star_wars git:(main) ✗ ls
+empire    rebellion
+➜  star_wars git:(main) ✗ ls -a
+.         ..        empire    rebellion
+➜  star_wars git:(main) ✗ cd rebellion 
+➜  rebellion git:(main) ✗ ls
+millenium_falcon
+➜  rebellion git:(main) ✗ cd millenium_falcon
+➜  millenium_falcon git:(main) ✗ ls
+chewbacca.txt      han_solo.txt       luke_skywalker.txt princess_leia.txt
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  rebellion git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion
+➜  rebellion git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ mv rebellion/millenium_falcon/empire/death_star
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  star_wars git:(main) ✗ cd ..
+➜  u1_hw_star_wars git:(main) ✗ mv empire/death_star/millenium_falcon/* empire/death_star
+zsh: no matches found: empire/death_star/millenium_falcon/*
+➜  u1_hw_star_wars git:(main) ✗ cd star_wars
+➜  star_wars git:(main) ✗ mv empire/death_star/millenium_falcon/* empire/death_star
+zsh: no matches found: empire/death_star/millenium_falcon/*
+➜  star_wars git:(main) ✗ ls
+empire    rebellion
+➜  star_wars git:(main) ✗ rm -rf rebellion
+➜  star_wars git:(main) ✗ mkdir rebellion
+➜  star_wars git:(main) ✗ mkdir millenium_falcon
+➜  star_wars git:(main) ✗ rm -rf millenium_falcon 
+➜  star_wars git:(main) ✗ cd rebellion
+➜  rebellion git:(main) ✗ mkdir millenium_falcon
+➜  rebellion git:(main) ✗ cd m
+cd: no such file or directory: m
+➜  rebellion git:(main) ✗ cd millenium_falcon 
+➜  millenium_falcon git:(main) ✗ touch chewbacca.txt han_solo.txt luke_skywalker.txt princess_leia.txt
+➜  millenium_falcon git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/rebellion/millenium_falcon
+➜  millenium_falcon git:(main) ✗ cd ..
+➜  rebellion git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ mv death_star/darth_vader.tx/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ cd empire
+➜  empire git:(main) ✗ ls
+death_star            emperor_palpatine.txt notes
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt empire
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ ls
+death_star            emperor_palpatine.txt empire                notes
+➜  empire git:(main) ✗ rm empire
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ ls
+➜  death_star git:(main) ✗ ls -a
+.  ..
+➜  death_star git:(main) ✗ touch darth_vader.txt
+➜  death_star git:(main) ✗ mv death_star/darth_vader.txt/ empire
+mv: rename death_star/darth_vader.txt/ to empire: No such file or directory
+➜  death_star git:(main) ✗ mv death_star/darth_vader.txt empire
+mv: rename death_star/darth_vader.txt to empire: No such file or directory
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt empire
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ touch darth_vader.txt
+➜  death_star git:(main) ✗ mv empire/death_star/darth_vader.txt/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ ls
+empire    rebellion
+➜  star_wars git:(main) ✗ cd star_wars
+cd: no such file or directory: star_wars
+➜  star_wars git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars
+➜  star_wars git:(main) ✗ ls
+empire    rebellion
+➜  star_wars git:(main) ✗ mv empire/death_star/darth_vader.txt/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  star_wars git:(main) ✗ mv empire/death_star/darth_vader.txt/empire/darth_vader.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  star_wars git:(main) ✗ cd empire
+➜  empire git:(main) ✗ ls
+death_star            emperor_palpatine.txt empire                notes
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ mv dart_vader.txt/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ mv darth_vader.txt/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ mv darth_vader.txt empire
+➜  death_star git:(main) ✗ mv empire darth_vader.txt
+➜  death_star git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire/death_star
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ mv empire/death_star/darth_vader/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ mv darth_vader death_star/empire
+mv: rename darth_vader to death_star/empire: No such file or directory
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ mv * empire
+➜  death_star git:(main) ✗ mv empire darth_vader.txt
+➜  death_star git:(main) ✗ mv empire/death_star/darth_vader ~
+mv: rename empire/death_star/darth_vader to /Users/e132/darth_vader: No such file or directory
+➜  death_star git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire/death_star
+➜  death_star git:(main) ✗ mv empire/death_star/darth_vader
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ mv empire/death_star/darth_vader
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  empire git:(main) ✗ mv empire/death_star/darth_vader ~
+mv: rename empire/death_star/darth_vader to /Users/e132/darth_vader: Not a directory
+➜  empire git:(main) ✗ mv empire/death_star/darth_vader/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  empire git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ ls
+empire    rebellion
+➜  star_wars git:(main) ✗ mv empire/death_star/darth_vader/empire
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  star_wars git:(main) ✗ mv darth_vader.txt star_wars/empire
+mv: rename darth_vader.txt to star_wars/empire: No such file or directory
+➜  star_wars git:(main) ✗ cd empire
+➜  empire git:(main) ✗ ls
+death_star            emperor_palpatine.txt empire                notes
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ mv darth_vader.txt empire
+➜  death_star git:(main) ✗ mv empire darth_vader.txt
+➜  death_star git:(main) ✗ mv darth_vader.txt star_wars/empire
+mv: rename darth_vader.txt to star_wars/empire: No such file or directory
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt empire
+➜  empire git:(main) ✗ pwd
+/Users/e132/Desktop/GA/unit1/homework/tuesday/u1_hw_star_wars/star_wars/empire
+➜  empire git:(main) ✗ rm empire
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ touch darth_vader.txt
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt/ empire
+mv: rename death_star/darth_vader.txt/ to empire: Not a directory
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt empire
+➜  empire git:(main) ✗ rm empire
+➜  empire git:(main) ✗ cd death_star
+➜  death_star git:(main) ✗ touch darth_vader.txt
+➜  death_star git:(main) ✗ cd ..
+➜  empire git:(main) ✗ mv darth_vader.txt empire 
+mv: rename darth_vader.txt to empire: No such file or directory
+➜  empire git:(main) ✗ cd death_star 
+➜  death_star git:(main) ✗ mv darth_vader.txt/ empire
+mv: rename darth_vader.txt/ to empire: Not a directory
+➜  death_star git:(main) ✗ mv darth_vader.txt/empire 
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  death_star git:(main) ✗ cd ..                     
+➜  empire git:(main) ✗ mv death_star/* /empire       
+mv: fastcopy: open() failed (to): /empire: Read-only file system
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt/empire/darth_vader.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+➜  empire git:(main) ✗ mv death_star/darth_vader.txt empire
+➜  empire git:(main) ✗ mv empire darth_vader.txt
+➜  empire git:(main) ✗ rm -rf death_star
+➜  empire git:(main) ✗ cd ..
+➜  star_wars git:(main) ✗ cd ..
+➜  u1_hw_star_wars git:(main) ✗ git add .
+➜  u1_hw_star_wars git:(main) ✗ git commit -m "Act3 Changes"
+[main c9fb6d8] Act3 Changes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ rename star_wars/empire/{death_star => }/darth_vader.txt (100%)
+ rename star_wars/{empire/death_star => rebellion/millenium_falcon}/chewbacca.txt (100%)
+ rename star_wars/{empire/death_star => rebellion/millenium_falcon}/han_solo.txt (100%)
+ rename star_wars/{empire/death_star => rebellion/millenium_falcon}/luke_skywalker.txt (100%)
+ rename star_wars/{empire/death_star => rebellion/millenium_falcon}/princess_leia.txt (100%)
+➜  u1_hw_star_wars git:(main) history | tail -n 250
+  377  ls
+  378  rm rebellion
+  379  rm -rf rebellion
+  380  ls
+  381  cd star_wars
+  382  ls
+  383  rm empire
+  384  ls
+  385  rm -rf empire
+  386  ls
+  387  cd ..
+  388  ls
+  389  mkdir star_wars/empire star_wars/rebellion star_wars
+  390  ls
+  391  cd star_wars
+  392  ls
+  393  cd empire
+  394  pwd
+  395  touch darth_vader.txt
+  396  echo ...heavy breathig...>>notes
+  397  pwd
+  398  touch emperor_palpatine.txt
+  399  ls
+  400  mkdir death_star
+  401  mv darth_vader.txt death_star
+  402  cd death_star
+  403  ls
+  404  cd ..
+  405  ls
+  406  ls -a
+  407  git add .
+  408  git commit -m "Act1 Changes"
+  409  ls
+  410  cd ..
+  411  ls
+  412  cd rebellion
+  413  ls
+  414  pwd
+  415  touch princess_leia.txt && echo "Help me, Obi-Wan..."
+  416  ls
+  417  rm princess_leia.txt
+  418  touch princess_leia.txt && echo "Help me, Obi-Wan...">>
+  419  touch princess_leia.txt && echo "Help me, Obi-Wan..."
+  420  touch obi-wan
+  421  rm touch obi-wan
+  422  touch obi-wan.txt 
+  423  touch luke_skywalker.txt
+  424  mkdir millenium_falcon
+  425  cd  millenium_falcon
+  426  touch han_solo.txt chewbacca.txt
+  427  cd ..
+  428  ls
+  429  mv luke_skywalker.txt obi-wan.txt princess_leia.txt millenium_falcon
+  430  pwd
+  431  ls
+  432  cd millenium_falcon
+  433  ls
+  434  pwd
+  435  cd ..
+  436  ls
+  437  mv millenium_falcon death_star
+  438  ls
+  439  u
+  440  pwd
+  441  ls
+  442  cd death_star
+  443  ls
+  444  cd ..
+  445  ls
+  446  mvdeath_star millenium_falcon
+  447  mv death_star millenium_falcon
+  448  mv millenium_falcon/death_star
+  449  ls
+  450  pwd
+  451  ls
+  452  pwd
+  453  cd ..
+  454  pwd
+  455  mv rebellion/millenium_falcon empire/death_star
+  456  git add <act2.sh>
+  457  git add .
+  458  git commit -m "Act2 Changes"
+  459  pwd
+  460  mv millenium_falcon/*  empire/death_star
+  461  mv empire/death_star/millenium_falcon/* empire/death_star
+  462  pwd
+  463  ls
+  464  cd empire
+  465  ls
+  466  cd death_star
+  467  ls
+  468  mv obi-wan.txt
+  469  rm obi-wan.txt
+  470  ls
+  471  pwd
+  472  cd ..
+  473  git add . 
+  474  git commit -m "Act2 Changes"
+  475  pwd
+  476  ls
+  477  cd star_wars
+  478  ls
+  479  mv millenium_falcon/empire/death_star/* millenium_falcon
+  480  ls
+  481  cd empire
+  482  mv millenium_falcon/empire/death_star/* millenium_falcon
+  483  pwd
+  484  cd death_star
+  485  ls
+  486  mv chewbacca.txt han_solo.txt luke_skywalker.txt prince_leia.txt/millenium_falcon
+  487  ls
+  488  mv chewbacca.txt han_solo.txt luke_skywalker.txt prince_leia.txt millenium_falcon
+  489  ls
+  490  mv princess_leia.txt millenium_falcon
+  491  mv darth_vader.txt/death_star
+  492  cd ..
+  493  pwd
+  494  cd ..
+  495  pwd
+  496  mv empire/death_star/millenium_falcon/* rebellion
+  497  mv empire/death_star/millenium_falcon/ rebellion
+  498  cd rebellion
+  499  ls
+  500  mv chewbacca.txt luke_skywalker.txt princess_leia.txt han_solo.txt millenium_falcon
+  501  mv chewbacca.txt luke_skywalker.txt princess_leia.txt han_solo.txt/millenium_falcon
+  502  mv millenium_falcon rebellion
+  503  mv rebellion millenium_falcon
+  504  mv millenium_falcon/rebllion
+  505  pwd
+  506  cd ..
+  507  mv millenium_falcon/rebllion
+  508  mv millenium_falcon rebllion 
+  509  rm millenium_falcon
+  510  pwd
+  511  cd star_wars
+  512  ls
+  513  ls -a
+  514  cd rebellion
+  515  ls
+  516  cd millenium_falcon
+  517  ls
+  518  cd ..
+  519  pwd
+  520  cd ..
+  521  pwd
+  522  mv rebellion/millenium_falcon/empire/death_star
+  523  cd ..
+  524  mv empire/death_star/millenium_falcon/* empire/death_star
+  525  cd star_wars
+  526  mv empire/death_star/millenium_falcon/* empire/death_star
+  527  ls
+  528  rm -rf rebellion
+  529  mkdir rebellion
+  530  mkdir millenium_falcon
+  531  rm -rf millenium_falcon
+  532  cd rebellion
+  533  mkdir millenium_falcon
+  534  cd m
+  535  cd millenium_falcon
+  536  touch chewbacca.txt han_solo.txt luke_skywalker.txt princess_leia.txt
+  537  pwd
+  538  cd ..
+  539  mv death_star/darth_vader.tx/empire
+  540  pwd
+  541  cd empire
+  542  ls
+  543  mv death_star/darth_vader.txt/empire
+  544  mv death_star/darth_vader.txt empire
+  545  pwd
+  546  ls
+  547  rm empire
+  548  cd death_star
+  549  ls
+  550  ls -a
+  551  touch darth_vader.txt
+  552  mv death_star/darth_vader.txt/ empire
+  553  mv death_star/darth_vader.txt empire
+  554  cd ..
+  555  pwd
+  556  mv death_star/darth_vader.txt empire
+  557  pwd
+  558  cd death_star
+  559  touch darth_vader.txt
+  560  mv empire/death_star/darth_vader.txt/empire
+  561  cd ..
+  562  ls
+  563  cd star_wars
+  564  pwd
+  565  ls
+  566  mv empire/death_star/darth_vader.txt/empire
+  567  mv empire/death_star/darth_vader.txt/empire/darth_vader.txt
+  568  cd empire
+  569  ls
+  570  cd death_star
+  571  mv dart_vader.txt/empire
+  572  mv darth_vader.txt/empire
+  573  mv darth_vader.txt empire
+  574  mv empire darth_vader.txt
+  575  pwd
+  576  cd ..
+  577  pwd
+  578  mv empire/death_star/darth_vader/empire
+  579  pwd
+  580  mv darth_vader death_star/empire
+  581  cd death_star
+  582  mv * empire
+  583  mv empire darth_vader.txt
+  584  mv empire/death_star/darth_vader ~
+  585  pwd
+  586  mv empire/death_star/darth_vader
+  587  cd ..
+  588  mv empire/death_star/darth_vader
+  589  mv empire/death_star/darth_vader ~
+  590  mv empire/death_star/darth_vader/empire
+  591  cd ..
+  592  ls
+  593  mv empire/death_star/darth_vader/empire
+  594  mv darth_vader.txt star_wars/empire
+  595  cd empire
+  596  ls
+  597  cd death_star
+  598  mv darth_vader.txt empire
+  599  mv empire darth_vader.txt
+  600  mv darth_vader.txt star_wars/empire
+  601  cd ..
+  602  mv death_star/darth_vader.txt empire
+  603  pwd
+  604  rm empire
+  605  cd death_star
+  606  touch darth_vader.txt
+  607  cd ..
+  608  mv death_star/darth_vader.txt/ empire
+  609  mv death_star/darth_vader.txt empire
+  610  rm empire
+  611  cd death_star
+  612  touch darth_vader.txt
+  613  cd ..
+  614  mv darth_vader.txt empire
+  615  cd death_star
+  616  mv darth_vader.txt/ empire
+  617  mv darth_vader.txt/empire
+  618  cd ..
+  619  mv death_star/* /empire
+  620  mv death_star/darth_vader.txt/empire/darth_vader.txt
+  621  mv death_star/darth_vader.txt empire
+  622  mv empire darth_vader.txt
+  623  rm -rf death_star
+  624  cd ..
+  625  git add .
+  626  git commit -m "Act3 Changes"
+➜  u1_hw_star_wars git:(main) 
